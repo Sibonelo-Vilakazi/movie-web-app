@@ -30,6 +30,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # WHAT to Install 
 npm install bootstrap bootstrap-icons
+npm install @ng-bootstrap/ng-bootstrap@next
+
+
 
 changing your angular.json file
 
