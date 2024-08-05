@@ -1,0 +1,9 @@
+@if (config) {
+    <div (click)="config.onClick ? config.onClick(): null " class="movie-card-container">
+        <div [style.background-image]="'url('+ config.img+')'" class="image-container">
+            <app-rate-chip [rate]="config.rate" 
+            [placeDecimals]="2"></app-rate-chip>
+        </div>
+        <p class="name">{{config.movieName}}</p>
+    </div>
+}

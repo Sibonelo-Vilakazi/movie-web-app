@@ -1,0 +1,38 @@
+<div class="detail-container">
+    <div class="detail-content">
+        <app-detail-banner [config]="bannerConfig"></app-detail-banner>
+        
+        @if(config){
+            <div class="detail-section">
+                <div [style.background-image]="'url('+ config.img +')'" 
+                class="img-section">
+                </div>
+    
+                <div class="info-section">
+    
+                    @if(config.subtitle){
+                        <span class="title">{{config.subtitle}}</span>
+                    }
+                    
+                    <span class="overview">
+                        {{config.description}}
+                    </span>
+    
+                    <app-rate-chip [rate]="config.rate" [placeDecimals]="3"></app-rate-chip>
+    
+                    <div [ngClass]="{'vertical': config.isVertical}" class="seperate-box">
+                        @for (item of config.detailCards; track $index) {
+                            <div class="box">
+                                <span class="box-title">{{item.title}}</span>
+                                <span class="box-description">
+                                    {{item.description}}
+                                </span>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+        
+    </div>
+</div>

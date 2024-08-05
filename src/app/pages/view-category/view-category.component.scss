@@ -1,0 +1,45 @@
+.view-category-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .view-category-content{
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        width: 80%;
+        padding-top: 60px;
+        .title-container{
+            .mini-title{
+                color: #B2ADED;
+                font-size: 16px;
+                margin: 0px;
+            }
+
+            .title{
+                color: #EBEEF5;
+                font-size: 50px;
+                font-weight: bold;
+                margin: 0px;
+
+                span{
+                    font-size: 20px;
+                }
+            }
+
+
+        }
+
+        .movie-cards-section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 24px;
+            .movie-card{
+                width: calc((100%/3) - 24px );
+                min-width: 300px;
+                align-self: stretch;
+            }
+        }
+    }
+}

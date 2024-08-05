@@ -1,0 +1,34 @@
+<div class="home-container">
+
+    <div class="home-content">
+        <div class="title-container">
+            <p class="mini-title">
+                Mailehereko
+            </p>
+            
+            @if (title) {
+                <p class="title">
+                    {{title}} <span>({{movieCards.length}})</span>
+                </p>
+            }
+            
+        </div>
+        
+
+        <div class="search-section">
+            <app-input></app-input>
+        </div>
+
+        <div class="segmented-control-section">
+            <app-segmented-control [config]="segments"></app-segmented-control>
+        </div>
+
+        <div class="movie-cards-section">
+            @for (item of movieCards; track $index) {
+                <div class="movie-card">
+                    <app-movie-card [config]="item"></app-movie-card>
+                </div>
+            }
+        </div>
+    </div>
+</div>
