@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+  color: white;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+
+body{
+    background: linear-gradient(to bottom right,
+    rgba(#121829, 0.14),
+    rgba(#0F243C, 0.47),
+    rgba(#191A40, 0.91)
+  );
+    color: white;
+    background-image: url('https://mailehereko.pramodpoudel.com.np/_nuxt/img/bg.1c9b34b.png');
+    background-repeat: repeat-y;
+    background-position: 50% -160px;
+    background-color: #121829;
+    // min-height: 100vh;
+    width: 100vw;
+    font-family: Poppins, -apple-system, 
+    BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, 
+    Ubuntu, Cantarell, Open Sans, Helvetica Neue, 
+    sans-serif;
+    //background: linear-gradient(to bottom right, red, yellow 50%, green);
+}

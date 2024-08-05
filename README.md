@@ -27,6 +27,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
+## Creating and angular project 
+ng new movie-web-app
+
+Styling : Scss
+Server Side Rendering : N 
+Google Analytics : N 
 
 # WHAT to Install 
 npm install bootstrap bootstrap-icons
@@ -35,8 +41,7 @@ npm install @ng-bootstrap/ng-bootstrap@next
 
 
 changing your angular.json file
-
- "styles": [
+"styles": [
   "node_modules/bootstrap/scss/bootstrap.scss",
   "node_modules/bootstrap-icons/font/bootstrap-icons.css",
   "src/styles.scss"
